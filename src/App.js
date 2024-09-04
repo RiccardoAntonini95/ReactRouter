@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/Home";
 import ProductsPage from "./pages/Products";
+import ProductDetailPage from "./pages/ProductDetail";
 import RootLayout from "./pages/Root";
 import ErrorPage from "./pages/Error";
 
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/products",
         element: <ProductsPage />
+      },
+      {
+        path: "/products/:productId", //route dinamica
+        element: <ProductDetailPage />
       }
     ]
   },

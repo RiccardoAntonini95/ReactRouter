@@ -6,7 +6,7 @@ export default function RootLayout() {
         <>
             <MainNavigation />
             <main>
-                <Outlet /> {/* renderizza le routes definite in children  */}
+                <Outlet /> {/* renderizza le routes definite nel router in children */}
             </main>
         </>
     )
